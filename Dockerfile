@@ -1,5 +1,6 @@
-FROM python:2.7.8
+FROM python:2.7.14
 MAINTAINER motionman <motionman@sinarproject.org>
+MAINTAINER leto1210 version 2.7.14
 
 RUN apt-get update -q && \
     apt-get install -qy libgeoip-dev libpcap-dev tor && \
