@@ -9,8 +9,9 @@ RUN set -x \
     && locale-gen en_US.UTF-8
 
 ## Upgrade env and prerequisites ###
-#RUN apt-get update -q
-RUN apt-get install -yq python-pip python-dev libgeoip-dev libpcap-dev libdumbnet-dev build-essential libssl-dev libffi-dev libssl1.0.0 tor-geoipdb virtualenv torsocks tor
+RUN apt-get install -yq python-pip python-dev libgeoip-dev libpcap-dev libdumbnet-dev \
+                          build-essential libssl-dev libffi-dev libssl1.0.0 \
+                          tor-geoipdb virtualenv torsocks tor
 RUN rm -rf /var/lib/apt/lists/*
 
 ### Installation of ooniprobe ###
