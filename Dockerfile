@@ -19,7 +19,6 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade ooniprobe
 
 ### Load default conf ###
-COPY ooniprobe.conf /etc/ooniprobe.conf
 ADD ooniprobe.conf /var/lib/ooni/
 
 # EXPOSE PORT (For Web UI)
