@@ -14,7 +14,7 @@ RUN pip install --upgrade ooniprobe
 ### Load default conf ###
 
 ADD ooniprobe.conf /var/lib/ooni/
-RUN echo "webui_address: "127.0.0.1" >> /var/lib/ooni/ooniprobe.conf
+#RUN echo "webui_address: "127.0.0.1" >> /var/lib/ooni/ooniprobe.conf
 
 # EXPOSE PORT (For Web UI)
 EXPOSE 8842
